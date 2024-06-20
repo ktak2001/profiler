@@ -1,0 +1,11 @@
+def func1() {
+  i=0;
+  while (i<100000) {
+    i = i+1;
+    func2();
+  };
+};
+def func2() {
+  i=0;
+};
+func1();

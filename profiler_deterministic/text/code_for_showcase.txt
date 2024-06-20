@@ -1,0 +1,21 @@
+check_def func1(n) {
+  i=0;
+  while (i<100) {
+    i=i+1;
+  };
+  if (n < 2) {
+    n;
+  } else {
+    func1(n-1);
+    func2(n-1);
+  };
+};
+
+check_def func2(n) {
+  i = 100*n;
+  while (i > 0) {
+    i=i-1;
+  };
+};
+
+func1(10);

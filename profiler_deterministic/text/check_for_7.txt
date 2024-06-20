@@ -1,0 +1,54 @@
+check_def func1(a,b) {
+  k=0;
+  func4();
+  func3("i am", " Kazuki");
+  func6(a,b);
+  if (a>0) {
+    k=func1(a-1,b);
+  };
+  k+b;
+};
+
+check_def func2(a) {
+  func1(a,10);
+  func5(a);
+  func7();
+  if (a>0) {
+    func2(a-2);
+  };
+};
+
+check_def func3(a,b) {
+  s = "hello" + a + b;
+};
+
+check_def func4() {
+  i=0;
+  while (i<10000) {
+    i=i+1;
+  };
+};
+
+check_def func5(k) {
+  i=10000*k;
+  while (i>0) {
+    i=i-1;
+  };
+};
+
+check_def func6(t1, t2) {
+  i=t1*t2*100;
+  while (i>0) {
+    i = i-1;
+  };
+  t1+t2;
+};
+
+check_def func7() {
+  i=0;
+  while (i < 1000) {
+    i=i+1;
+  };
+};
+
+func2(10);

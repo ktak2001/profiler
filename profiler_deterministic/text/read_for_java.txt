@@ -1,0 +1,25 @@
+def func1(a,b) {
+  k=0;
+  if (a>0) {
+    k=func1(a-2,b);
+  };
+  k+b;
+};
+
+def func2(a) {
+  func1(a,10);
+  if (a>0) {
+    func2(a-2);
+  };
+};
+
+def func4() {
+  i=0;
+  while (i<10000) {
+    i=i+1;
+  };
+  i;
+}
+
+func2(10);
+func4()

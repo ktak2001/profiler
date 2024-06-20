@@ -1,0 +1,12 @@
+// 1,000
+check_def func1() {
+  i=0;
+  while (i<1000) {
+    i = i+1;
+    func2();
+  };
+};
+check_def func2() {
+  i=0;
+};
+func1();

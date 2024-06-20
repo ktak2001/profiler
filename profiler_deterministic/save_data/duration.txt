@@ -1,0 +1,13 @@
+10,000
+
+check:
+Duration: 19.156166999999996ms
+Duration: 20.051916000000006ms
+Duration: 19.191041ms
+
+no check:
+Duration: 17.151791000000003ms
+Duration: 17.78450000000001ms
+Duration: 16.25862500000001ms
+Duration: 5800.111291ms
+Duration: 5796.841292ms
