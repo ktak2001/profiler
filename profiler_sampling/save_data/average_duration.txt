@@ -1,0 +1,53 @@
+# Average Durations
+
+## duration_promise.txt
+1000:
+promise: 51.34611133333334ms
+
+10,000:
+promise: 340.7440416666667ms
+
+100,000:
+promise: 3162.6432226666665ms
+
+## duration_sampling.txt
+1,000:
+check:
+sampling: 39.875583ms
+
+10,000:
+check:
+sampling: 52.836194ms
+
+100,000:
+check:
+sampling: 119.868302ms
+
+1,000,000:
+check:
+sampling: 790.958188ms
+
+10,000,000:
+check:
+sampling: 7657.274903ms
+
+## duration_deterministic.txt
+1,000 times:
+check:
+deterministic: 5.730653ms
+no check: 5.123208ms
+
+100,000 times:
+check:
+deterministic: 118.225445ms
+no check: 77.660139ms
+
+1,000,000 times:
+check:
+deterministic: 1059.599111ms
+no check: 818.779028ms
+
+10,000,000 times:
+check:
+deterministic: 11450.632111ms
+no check: 6840.830181ms

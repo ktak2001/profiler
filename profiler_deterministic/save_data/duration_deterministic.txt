@@ -51,3 +51,19 @@ no check:
 Duration: 7060.8610419999995ms
 Duration: 6665.235416ms
 Duration: 6796.396084ms
+
+check_22:
+check:
+Duration: 5924.038708ms
+Duration: 6014.072375ms
+Duration: 6243.263875ms
+
+no check:
+Duration: 5726.653499999999ms
+Duration: 6282.865ms
+Duration: 5757.354917000001ms
+Duration: 5829.528334ms
+Duration: 5789.653625000001ms
+Duration: 124.43354099999999ms
+Duration: 1020.0458329999999ms
+Duration: 4.777791000000008ms

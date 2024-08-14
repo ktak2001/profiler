@@ -1,0 +1,10 @@
+if (value instanceof CheckFunc)
+  startTime = performance.now();
+//
+// Function executing
+//
+if (value instanceof CheckFunc)
+  endTime = performance.now();
+  stack.push({funcName, startTime, endTime})
+
+  

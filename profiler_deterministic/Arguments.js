@@ -3,8 +3,7 @@
 import { ASTList } from "./ASTList.js";
 import { CheckFunc } from "./CheckFunc.js";
 import { Func } from "./Func.js";
-import { time_stack } from "./main.js";
-import { START, END } from "./constants.js";
+import { time_stack } from "./main_event_based.js";
 
 export class Arguments extends ASTList {
   constructor(c) { super(c); }
@@ -27,7 +26,6 @@ export class Arguments extends ASTList {
     for (let a of this) {
       params.eval(newEnv, num++, a.eval(callerEnv));
     }
-    // console.log("params.eval", newEnv)
     let paramValues = [];
     for (let k of newEnv.values) paramValues.push(k[1]);
     let res = func.body.eval(newEnv);

@@ -1,4 +1,4 @@
-export const sharedBuffer = new SharedArrayBuffer(3000*4)
+export const sharedBuffer = new SharedArrayBuffer(8000*4)
 export const sharedArray = new Int32Array(sharedBuffer)
 export var funcDict = {}
 var lastIdx = 0

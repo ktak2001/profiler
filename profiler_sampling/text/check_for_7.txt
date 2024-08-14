@@ -46,7 +46,7 @@ check_def func6(t1, t2) {
 
 check_def func7() {
   i=0;
-  while (i < 1000) {
+  while (i < 100000) {
     i=i+1;
   };
 };

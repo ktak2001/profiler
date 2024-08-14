@@ -1,0 +1,503 @@
+def func1() {
+  i=0;
+  while (i<1) {
+    i = i+1;
+    func2();
+    func3();
+    func4();
+    func5();
+    func6();
+    func7();
+    func8();
+    func9();
+    func10();
+    func11();
+    func12();
+    func13();
+    func14();
+    func15();
+    func16();
+    func17();
+    func18();
+    func19();
+    func20();
+    func21();
+    func22();
+    func23();
+    func24();
+    func25();
+    func26();
+    func27();
+    func28();
+    func29();
+    func30();
+    func31();
+    func32();
+    func33();
+    func34();
+    func35();
+    func36();
+    func37();
+    func38();
+    func39();
+    func40();
+    func41();
+    func42();
+    func43();
+    func44();
+    func45();
+    func46();
+    func47();
+    func48();
+    func49();
+    func50();
+    func51();
+    func52();
+    func53();
+    func54();
+    func55();
+    func56();
+    func57();
+    func58();
+    func59();
+    func60();
+    func61();
+    func62();
+    func63();
+    func64();
+    func65();
+    func66();
+    func67();
+    func68();
+    func69();
+    func70();
+    func71();
+    func72();
+    func73();
+    func74();
+    func75();
+    func76();
+    func77();
+    func78();
+    func79();
+    func80();
+    func81();
+    func82();
+    func83();
+    func84();
+    func85();
+    func86();
+    func87();
+    func88();
+    func89();
+    func90();
+    func91();
+    func92();
+    func93();
+    func94();
+    func95();
+    func96();
+    func97();
+    func98();
+    func99();
+    func100();
+  };
+};
+
+def func2() {
+  i=0;
+};
+
+def func3() {
+  i=0;
+};
+
+def func4() {
+  i=0;
+};
+
+def func5() {
+  i=0;
+};
+
+def func6() {
+  i=0;
+};
+
+def func7() {
+  i=0;
+};
+
+def func8() {
+  i=0;
+};
+
+def func9() {
+  i=0;
+};
+
+def func10() {
+  i=0;
+};
+
+def func11() {
+  i=0;
+};
+
+def func12() {
+  i=0;
+};
+
+def func13() {
+  i=0;
+};
+
+def func14() {
+  i=0;
+};
+
+def func15() {
+  i=0;
+};
+
+def func16() {
+  i=0;
+};
+
+def func17() {
+  i=0;
+};
+
+def func18() {
+  i=0;
+};
+
+def func19() {
+  i=0;
+};
+
+def func20() {
+  i=0;
+};
+
+def func21() {
+  i=0;
+};
+
+def func22() {
+  i=0;
+};
+
+def func23() {
+  i=0;
+};
+
+def func24() {
+  i=0;
+};
+
+def func25() {
+  i=0;
+};
+
+def func26() {
+  i=0;
+};
+
+def func27() {
+  i=0;
+};
+
+def func28() {
+  i=0;
+};
+
+def func29() {
+  i=0;
+};
+
+def func30() {
+  i=0;
+};
+
+def func31() {
+  i=0;
+};
+
+def func32() {
+  i=0;
+};
+
+def func33() {
+  i=0;
+};
+
+def func34() {
+  i=0;
+};
+
+def func35() {
+  i=0;
+};
+
+def func36() {
+  i=0;
+};
+
+def func37() {
+  i=0;
+};
+
+def func38() {
+  i=0;
+};
+
+def func39() {
+  i=0;
+};
+
+def func40() {
+  i=0;
+};
+
+def func41() {
+  i=0;
+};
+
+def func42() {
+  i=0;
+};
+
+def func43() {
+  i=0;
+};
+
+def func44() {
+  i=0;
+};
+
+def func45() {
+  i=0;
+};
+
+def func46() {
+  i=0;
+};
+
+def func47() {
+  i=0;
+};
+
+def func48() {
+  i=0;
+};
+
+def func49() {
+  i=0;
+};
+
+def func50() {
+  i=0;
+};
+
+def func51() {
+  i=0;
+};
+
+def func52() {
+  i=0;
+};
+
+def func53() {
+  i=0;
+};
+
+def func54() {
+  i=0;
+};
+
+def func55() {
+  i=0;
+};
+
+def func56() {
+  i=0;
+};
+
+def func57() {
+  i=0;
+};
+
+def func58() {
+  i=0;
+};
+
+def func59() {
+  i=0;
+};
+
+def func60() {
+  i=0;
+};
+
+def func61() {
+  i=0;
+};
+
+def func62() {
+  i=0;
+};
+
+def func63() {
+  i=0;
+};
+
+def func64() {
+  i=0;
+};
+
+def func65() {
+  i=0;
+};
+
+def func66() {
+  i=0;
+};
+
+def func67() {
+  i=0;
+};
+
+def func68() {
+  i=0;
+};
+
+def func69() {
+  i=0;
+};
+
+def func70() {
+  i=0;
+};
+
+def func71() {
+  i=0;
+};
+
+def func72() {
+  i=0;
+};
+
+def func73() {
+  i=0;
+};
+
+def func74() {
+  i=0;
+};
+
+def func75() {
+  i=0;
+};
+
+def func76() {
+  i=0;
+};
+
+def func77() {
+  i=0;
+};
+
+def func78() {
+  i=0;
+};
+
+def func79() {
+  i=0;
+};
+
+def func80() {
+  i=0;
+};
+
+def func81() {
+  i=0;
+};
+
+def func82() {
+  i=0;
+};
+
+def func83() {
+  i=0;
+};
+
+def func84() {
+  i=0;
+};
+
+def func85() {
+  i=0;
+};
+
+def func86() {
+  i=0;
+};
+
+def func87() {
+  i=0;
+};
+
+def func88() {
+  i=0;
+};
+
+def func89() {
+  i=0;
+};
+
+def func90() {
+  i=0;
+};
+
+def func91() {
+  i=0;
+};
+
+def func92() {
+  i=0;
+};
+
+def func93() {
+  i=0;
+};
+
+def func94() {
+  i=0;
+};
+
+def func95() {
+  i=0;
+};
+
+def func96() {
+  i=0;
+};
+
+def func97() {
+  i=0;
+};
+
+def func98() {
+  i=0;
+};
+
+def func99() {
+  i=0;
+};
+
+def func100() {
+  i=0;
+};
+
+func1();

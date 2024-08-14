@@ -6,8 +6,11 @@ import { Token } from "./Token.js"
 export class Lexer {
   queue = [];
   regexPat = new RegExp("\\s*((//.*)|([0-9]+)|(\"(\\\\\"|\\\\\\\\|\\\\n|[^\"])*\")|([A-Z_a-z][A-Z_a-z0-9]*)|(==|<=|=>|<|=|>|&&|\\|\\||\\*|\\+|=|-|/|,|%|^|&|\\||\\(|\\)|;|\\.|\\{|\\}))?","g");
-  constructor() {
-    let text = fs.readFileSync('text/read.txt','utf-8');
+  constructor(filename) {
+    let text = fs.readFileSync(
+      filename,
+      "utf-8"
+    );
     const results = [...text.matchAll(this.regexPat)];
     for (let i of results) {
       // console.log(i)

@@ -1,0 +1,105 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+
+\title{Efficient Implementation and Evaluation of Profilers in JavaScript-based Interpreters}
+\author{Kazuki Takehi \\ Chiba Laboratory, University of Tokyo}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction and Background}
+Profilers are essential tools in software development, providing crucial insights into program execution behavior and performance. They collect various data such as CPU usage, memory consumption, and execution time, which are vital for identifying bottlenecks and optimizing code. In the context of programming language implementation, profilers play a significant role in understanding the runtime characteristics of programs executed within interpreters.
+
+This research focuses on implementing and evaluating efficient profiling techniques within a JavaScript-based interpreter for an original language. The choice of JavaScript as the interpreter language presents unique challenges due to its single-threaded nature and event-driven architecture, which necessitate innovative approaches to profiling.
+
+\section*{Research Objectives}
+The primary objectives of this research are:
+\begin{enumerate}
+    \item To implement and compare different profiling techniques in a JavaScript-based interpreter.
+    \item To overcome the limitations of JavaScript's single-threaded nature in implementing statistical profiling.
+    \item To analyze the trade-offs between accuracy and overhead for different profiling methods.
+    \item To provide guidelines for selecting appropriate profiling techniques based on program characteristics.
+\end{enumerate}
+
+\section*{Methodology}
+Two distinct profiling approaches were implemented and evaluated in this study:
+
+\subsection*{1. Event-based Profiler}
+This method involves recording the start and end times of each function call, providing accurate execution time measurements. Implementation details include:
+\begin{itemize}
+    \item Instrumenting the interpreter to capture function entry and exit events.
+    \item Storing timestamps for each event.
+    \item Calculating precise execution times for each function call.
+\end{itemize}
+
+\subsection*{2. Statistical Profiler}
+This approach samples the program's state at regular intervals (every 1ms) to estimate execution times statistically. Key implementation aspects include:
+\begin{itemize}
+    \item Utilizing Web Workers to overcome JavaScript's single-threaded limitations.
+    \item Employing SharedArrayBuffer for efficient inter-thread communication.
+    \item Implementing a sampling mechanism to capture stack traces at fixed intervals.
+\end{itemize}
+
+\section*{Experimental Setup and Evaluation}
+The profilers were evaluated using a series of test programs with varying characteristics:
+\begin{itemize}
+    \item Programs with different numbers of function calls (ranging from $10^3$ to $10^7$).
+    \item Programs with varying function complexities and execution times.
+    \item Programs designed to test edge cases and potential profiling blindspots.
+\end{itemize}
+
+Metrics used for evaluation included:
+\begin{itemize}
+    \item Profiling overhead (additional execution time introduced by the profiler).
+    \item Accuracy of execution time measurements (compared to a baseline).
+    \item Memory consumption of the profiling process.
+    \item Ability to capture short-lived function calls.
+\end{itemize}
+
+\section*{Results and Discussion}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{overhead_comparison.png}
+    \caption{Comparison of profiling overhead based on the number of function calls}
+\end{figure}
+
+Key findings from the evaluation include:
+
+\begin{enumerate}
+    \item Overhead Comparison: As shown in Figure 1, the Event-based Profiler exhibited lower overhead for programs with fewer than $10^5$ function calls. However, for programs with more function calls, the Statistical Profiler demonstrated significantly lower overhead.
+    
+    \item Accuracy Trade-offs: The Event-based Profiler provided higher accuracy in measuring individual function execution times but incurred higher overhead for programs with numerous function calls. The Statistical Profiler, while potentially missing very short-lived functions, provided a good overall estimate of execution time distribution with lower overhead for complex programs.
+    
+    \item Scalability: The Statistical Profiler showed better scalability for large programs, maintaining relatively constant overhead regardless of the number of function calls.
+    
+    \item Memory Usage: The Event-based Profiler's memory consumption increased linearly with the number of function calls, while the Statistical Profiler maintained more consistent memory usage.
+\end{enumerate}
+
+\section*{Conclusions}
+This research demonstrates the feasibility and effectiveness of implementing sophisticated profiling techniques within JavaScript-based interpreters. The study concludes that:
+
+\begin{itemize}
+    \item For programs with fewer than $10^5$ function calls, the Event-based Profiler is preferable due to its higher accuracy and lower overhead.
+    \item For programs with $10^5$ or more function calls, the Statistical Profiler offers a better balance between accuracy and performance impact.
+    \item The use of Web Workers and SharedArrayBuffer effectively overcomes JavaScript's single-threaded limitations in implementing statistical profiling.
+\end{itemize}
+
+These findings provide valuable insights for choosing appropriate profiling strategies in JavaScript-based language implementations, balancing the trade-offs between accuracy and performance impact.
+
+\section*{Future Work}
+Future research directions include:
+\begin{itemize}
+    \item Extending the profiling techniques to other scripting languages such as Python and Ruby.
+    \item Investigating the integration of static analysis with dynamic profiling for more comprehensive program analysis.
+    \item Exploring real-time optimization techniques based on profiling data.
+    \item Applying and evaluating these profiling methods in large-scale, real-world applications.
+    \item Developing profiling techniques for multi-threaded environments to handle more complex application scenarios.
+\end{itemize}
+
+By pursuing these avenues, we aim to contribute to the development of more efficient and sophisticated program analysis and optimization technologies in various programming language implementations.
+
+\end{document}

@@ -11,3 +11,4 @@ Duration: 17.78450000000001ms
 Duration: 16.25862500000001ms
 Duration: 5800.111291ms
 Duration: 5796.841292ms
+Duration: 5731.846875ms

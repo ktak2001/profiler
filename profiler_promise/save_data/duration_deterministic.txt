@@ -1,0 +1,42 @@
+function called: 1,000 times
+check:
+Duration: 5.9076670000000036ms
+Duration: 5.678709000000012ms
+Duration: 5.6055840000000074ms
+
+no check:
+Duration: 5.243249999999989ms
+Duration: 5.040334000000001ms
+Duration: 5.0860409999999945ms
+
+function called: 100,000 times
+check:
+Duration: 109.85629200000001ms
+Duration: 134.089625ms
+Duration: 110.730417ms
+
+no check:
+Duration: 75.93387500000001ms
+Duration: 81.127459ms
+Duration: 75.91908300000001ms
+
+function called: 1,000,000 times
+check:
+Duration: 1028.97375ms
+Duration: 967.5234580000001ms
+Duration: 1182.300125ms
+
+no check:
+Duration: 686.072917ms
+Duration: 676.194084ms
+Duration: 1092.072083ms
+
+function called: 10,000,000 times
+check:
+Duration: 11384.276167ms
+Duration: 11412.764874999999ms
+Duration: 11552.855292ms
+no check:
+Duration: 7060.8610419999995ms
+Duration: 6665.235416ms
+Duration: 6796.396084ms

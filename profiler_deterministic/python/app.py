@@ -13,7 +13,7 @@ app = Flask(__name__)
 # signal.signal(signal.SIGALRM, handler)
 # signal.alarm(300)  # Set timeout to 300 seconds
 
-@app.route('/process', methods=['PUT'])
+@app.route('/process_event_based', methods=['PUT'])
 def process_data():
     data = request.json
     processed_data = {"message": "Data received", "received_data": data}
@@ -23,11 +23,6 @@ def process_data():
 
 def make_graph(data):
     function_names = [item['funcName'] for item in data]
-    start_times = [item['startTime'] for item in data]
-    durations = [item['duration'] for item in data]
-    parameters = [item['parameters'] for item in data]
-
-    # Create a set of unique function names
     unique_functions = sorted(set(function_names))
     print("unique_functions", unique_functions)
     # Prepare data for plotting
@@ -41,9 +36,7 @@ def make_graph(data):
 
     # Create broken horizontal bar graph
     fig, ax = plt.subplots()
-
     bar_height = 0.8  # Initial bar height
-
     # For each unique function, add all its bars with different colors
     # print("inside 3")
     for i, func in enumerate(unique_functions):
@@ -73,10 +66,10 @@ def make_graph(data):
 
     # Set labels and title
     ax.set_xlabel('Time')
-    ax.set_title('Function Execution Times')
+    ax.set_title('Event_Based: Function Execution Times')
 
     # Save the plot to a file instead of displaying it
-    plt.savefig('function_execution_times.png')
+    plt.savefig('/Users/takehikazuki/Desktop/todai/first_project/text_datas/event_based_97funcs.png')
     print("finished saving figure")
     plt.close(fig)  # Close the figure to free memory
 

@@ -1,0 +1,53 @@
+check_def func1() {
+  i=0;
+  while (i<100000) {
+    i = i+1;
+    func2();
+    func3();
+    func4();
+    func5();
+    func6();
+    func7();
+    func8();
+    func9();
+    func10();
+  };
+};
+
+check_def func2() {
+  i=0;
+};
+
+check_def func3() {
+  i=0;
+};
+
+check_def func4() {
+  i=0;
+};
+
+check_def func5() {
+  i=0;
+};
+
+check_def func6() {
+  i=0;
+};
+
+check_def func7() {
+  i=0;
+};
+
+check_def func8() {
+  i=0;
+};
+
+check_def func9() {
+  i=0;
+};
+
+check_def func10() {
+  i=0;
+};
+
+func1();

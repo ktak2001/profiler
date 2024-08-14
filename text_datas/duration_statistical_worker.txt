@@ -1,0 +1,8 @@
+7 functions:
+Duration: 899.354416ms
+22 functions:
+Duration: 1530.3016249999998ms
+97 functions:
+Duration: 4918.386875ms
+1000 functions:
+Duration: 4803.7194580000005ms

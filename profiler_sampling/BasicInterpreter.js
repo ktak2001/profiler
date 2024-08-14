@@ -7,16 +7,19 @@ import {isMainThread, parentPort} from 'worker_threads'
 let finished = false
 
 export class BasicInterpreter {
+  constructor(filename) {
+    this.filename = filename
+  }
   main = (args) => this.run(new BasicParser(), new BasicEnv())
   run = (bp, env) => {
-    let lexer = new Lexer();
+    let lexer = new Lexer(this.filename);
     // bp.getFuncs()
     while (lexer.peek(0)!=null) {
       let t = bp.parse(lexer)
-      console.log("parseResult", t.constructor.name)
+      // console.log("parseResult", t.constructor.name)
       if (!(t instanceof NullStmnt)) {
         let r = t.eval(env);
-        console.log("=> ", r);
+        // console.log("=> ", r);
       }
       if (lexer.peek(0) == null) finished = true
     }

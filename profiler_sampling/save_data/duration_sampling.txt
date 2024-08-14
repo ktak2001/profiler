@@ -1,0 +1,66 @@
+function called: 1,000
+check:
+Duration: 41.50583400000001ms
+Duration: 39.040666ms
+Duration: 39.08025000000001ms
+no check:
+Duration: 5.243249999999989ms
+Duration: 5.040334000000001ms
+Duration: 5.0860409999999945ms
+
+function called: 10,000
+check:
+Duration: 52.86758400000001ms
+Duration: 51.63254099999999ms
+Duration: 54.00845799999999ms
+no check:
+Duration: 17.151791000000003ms
+Duration: 17.78450000000001ms
+Duration: 16.25862500000001ms
+
+function called: 100,000
+check:
+Duration: 118.79854099999999ms
+Duration: 118.70066700000001ms
+Duration: 120.308292ms
+Duration: 121.665709ms
+no check:
+Duration: 75.93387500000001ms
+Duration: 81.127459ms
+Duration: 75.91908300000001ms
+
+function called: 1,000,000
+check:
+Duration: 792.717ms
+Duration: 793.900667ms
+Duration: 785.19175ms
+Duration: 790.026333ms
+no check:
+Duration: 686.072917ms
+Duration: 676.194084ms
+Duration: 1092.072083ms
+
+function called: 10,000,000
+check:
+Duration: 7564.172167ms
+Duration: 7831.369041ms
+Duration: 7578.2815ms
+no check:
+Duration: 7060.8610419999995ms
+Duration: 6665.235416ms
+Duration: 6796.396084ms
+
+// comments
+check_for_22:
+check:
+Duration: 5763.057707999999ms
+Duration: 5761.8526249999995ms
+Duration: 6038.5729169999995ms
+
+no check:
+Duration: 5757.354917000001ms
+Duration: 5829.528334ms
+Duration: 5789.653625000001ms
+Duration: 5800.785333ms
+Duration: 1932.5598750000001ms
+Duration: 2100.5682079999997ms

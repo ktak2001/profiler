@@ -1,6 +1,10 @@
-import { isMainThread, parentPort } from 'worker_threads';
+import { isMainThread, parentPort, workerData } from 'worker_threads';
 import { FuncInterpreter } from "./FuncInterpreter.js";
-const fi = new FuncInterpreter();
+// import { funcs_per_10ms } from './main_sampling.js';
+const { filepath } = workerData;
+const fi = new FuncInterpreter(filepath);
+
+console.log("in worker")
 
 let lastIdx = 0
 
@@ -13,28 +17,3 @@ parentPort.postMessage({
   "done": true,
   funcDict
 })
-// finishWorker()
-
-// parentPort.postMessage({
-//   "done": true,
-//   funcDict
-// })
-
-// if (!isMainThread) {
-//   parentPort.on('message', (message) => {
-//     if (message === 'start') {
-//       parentPort.postMessage({
-//         log: "started fi.main"
-//       });
-//       // fi.main();
-//     } else if (message === 'getFuncStack') {
-//       console.log("inside getFuncStack")
-//       parentPort.postMessage({
-//         "func_stack": func_stack
-//       })
-//     }
-//   });
-// }
-
-// worker threadsは使うべき
-// shared array bufferにworker側がpostし、それをmainが10msごとに取得する

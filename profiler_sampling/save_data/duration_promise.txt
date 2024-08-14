@@ -1,0 +1,8 @@
+1000:
+Average Duration: 51.34611133333334ms
+
+10,000:
+Average Duration: 340.7440416666667ms
+
+100,000:
+Average Duration: 3162.6432226666665ms

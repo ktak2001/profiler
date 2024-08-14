@@ -1,0 +1,157 @@
+def func1() {
+  i=0;
+  while (i<10) {
+    i = i+1;
+    func2();
+    func3();
+    func4();
+    func5();
+    func6();
+    func7();
+  };
+};
+def func2() {
+  i=0;
+  while (i<100) {
+    i = i+1;
+    func8();
+    func9();
+    func10();
+  };
+};
+def func3() {
+  i=0;
+  while (i<100) {
+    i = i+1;
+    func8();
+    func9();
+    func10();
+  };
+};
+def func4() {
+  i=0;
+  while (i<100) {
+    i = i+1;
+    func11();
+    func12();
+    func13();
+  };
+};
+def func5() {
+  i=0;
+  while (i<100) {
+    i = i+1;
+    func14();
+    func15();
+    func16();
+  };
+};
+def func6() {
+  i=0;
+  while (i<100) {
+    i = i+1;
+    func17();
+    func18();
+    func19();
+  };
+};
+def func7() {
+  i=0;
+  while (i<100) {
+    i = i+1;
+    func20();
+    func21();
+    func22();
+  };
+};
+def func8() {
+  i=0;
+  while (i<1000) {
+    i = i+1;
+  };
+};
+def func9() {
+  i=0;
+  while (i<1000) {
+    i = i+1;
+  };
+};
+def func10() {
+  i=0;
+  while (i<1000) {
+    i = i+1;
+  };
+};
+def func11() {
+  i=0;
+  while (i<1000) {
+    i = i+1;
+  };
+};
+def func12() {
+  i=0;
+  while (i<1000) {
+    i = i+1;
+  };
+};
+def func13() {
+  i=0;
+  while (i<1000) {
+    i = i+1;
+  };
+};
+def func14() {
+  i=0;
+  while (i<1000) {
+    i = i+1;
+  };
+};
+def func15() {
+  i=0;
+  while (i<1000) {
+    i = i+1;
+  };
+};
+def func16() {
+  i=0;
+  while (i<1000) {
+    i = i+1;
+  };
+};
+def func17() {
+  i=0;
+  while (i<1000) {
+    i = i+1;
+  };
+};
+def func18() {
+  i=0;
+  while (i<1000) {
+    i = i+1;
+  };
+};
+def func19() {
+  i=0;
+  while (i<1000) {
+    i = i+1;
+  };
+};
+def func20() {
+  i=0;
+  while (i<1000) {
+    i = i+1;
+  };
+};
+def func21() {
+  i=0;
+  while (i<1000) {
+    i = i+1;
+  };
+};
+def func22() {
+  i=0;
+  while (i<1000) {
+    i = i+1;
+  };
+};
+func1();

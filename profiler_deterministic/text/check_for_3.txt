@@ -1,0 +1,23 @@
+check_def func1(a) {
+  k=0;
+  func3();
+  if (a>0) {
+    k=func2(a-1);
+  };
+};
+
+check_def func2(a) {
+  func1(a);
+  if (a>0) {
+    func2(a-2);
+  };
+};
+
+check_def func3() {
+  i=0;
+  while (i<10000) {
+    i=i+1;
+  };
+};
+
+func1(10);

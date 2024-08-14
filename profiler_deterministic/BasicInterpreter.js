@@ -6,9 +6,12 @@ import { Lexer } from "./Lexer.js";
 import { NullStmnt } from "./NullStmnt.js";
 
 export class BasicInterpreter {
+  constructor(filename) {
+    this.filename = filename
+  }
   main = (args) => this.run(new BasicParser(), new BasicEnv())
   run = (bp, env) => {
-    let lexer = new Lexer();
+    let lexer = new Lexer(this.filename);
     while (lexer.peek(0)!=null) {
       let t = bp.parse(lexer)
       // console.log("parseResult", t.constructor.name)

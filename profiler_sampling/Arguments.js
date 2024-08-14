@@ -19,10 +19,11 @@ export class Arguments extends ASTList {
     let newEnv = func.makeEnv();
     let num = 0;
     const tmpUnique = uniqueFuncId++
+    
     if (value instanceof CheckFunc) {
       processSharedArrayBuffer(func.name, true, tmpUnique)
-      console.log("pushing to func_stack", func.name)
     }
+
     for (let a of this) {
       params.eval(newEnv, num++, a.eval(callerEnv));
     }

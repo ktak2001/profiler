@@ -1,0 +1,19 @@
+NULL=0;
+
+check_def fact (n,n2) {
+  f = 1;
+  while n > 0 {
+    f = f * n;
+    n = n - 1;
+  };
+  f=f+n2;
+};
+
+check_def fact2 (_) {
+  f2=15;
+  f2=f2+fact(3,1);
+  f2=f2+fact(5,3);
+};
+
+fact(5,2);
+fact2(NULL);

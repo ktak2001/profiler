@@ -15,7 +15,7 @@ export class BlockStmnt extends ASTList {
       if (!(t instanceof NullStmnt) && 'children' in t && t.children.length!=0) {
         // console.log(i++, "blockChildren", t)
         result = t.eval(env)
-        // console.log("result", t.constructor.name, result)
+        // console.log("result in Block", t.constructor.name, result)
       }
     }
     // console.log("getOut Block", result, env)
